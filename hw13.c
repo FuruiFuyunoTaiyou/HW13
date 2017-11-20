@@ -37,7 +37,7 @@ int main(){
 
     close(fds_c_to_p[READ]);
     printf("child about to write to parent... \n");
-    sleep(2);
+    //sleep(2);
     write(fds_c_to_p[WRITE], &i, sizeof(i)); //sending new value to parent
     printf("child  written to parent: %d \n", i);
   }
